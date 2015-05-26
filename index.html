@@ -1,57 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Simplemafcordovaplugin : A simple cordova plugin to use in Oracle MAF (Mobile Application Framework) application.">
+    <title>SimpleMafCordovaPlugin by paulcoiffier</title>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Simplemafcordovaplugin</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
-
   <body>
+    <div class="wrapper">
+      <header>
+        <h1>SimpleMafCordovaPlugin</h1>
+        <p>A simple cordova plugin to use in Oracle MAF (Mobile Application Framework) application.</p>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/paulcoiffier/SimpleMafCordovaPlugin">View on GitHub</a>
+        <p class="view"><a href="https://github.com/paulcoiffier/SimpleMafCordovaPlugin">View the Project on GitHub <small>paulcoiffier/SimpleMafCordovaPlugin</small></a></p>
 
-          <h1 id="project_title">Simplemafcordovaplugin</h1>
-          <h2 id="project_tagline">A simple cordova plugin to use in Oracle MAF (Mobile Application Framework) application.</h2>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/paulcoiffier/SimpleMafCordovaPlugin/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/paulcoiffier/SimpleMafCordovaPlugin/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
+        <ul>
+          <li><a href="https://github.com/paulcoiffier/SimpleMafCordovaPlugin/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/paulcoiffier/SimpleMafCordovaPlugin/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/paulcoiffier/SimpleMafCordovaPlugin">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
         <h1>
-<a id="simplemafcordovaplugin" class="anchor" href="#simplemafcordovaplugin" aria-hidden="true"><span class="octicon octicon-link"></span></a>SimpleMafCordovaPlugin</h1>
+<a id="simple-maf-cordova-plugin" class="anchor" href="#simple-maf-cordova-plugin" aria-hidden="true"><span class="octicon octicon-link"></span></a>Simple Maf Cordova Plugin</h1>
 
-<p>A simple cordova plugin to use in Oracle MAF (Mobile Application Framework) application.</p>
+<p>Simple plugin that returns your string prefixed with hello. This plugin is especially developed for use in Oracle MAF (Mobile Application Framework) application.</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+<p>Greeting a user with "Hello, world" is something that could be done in JavaScript. This plugin provides a simple example demonstrating how Cordova plugins work.</p>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>Clone the plugin in your "src" root app folder</p>
+
+<pre><code>$ git clone https://github.com/paulcoiffier/SimpleMafCordovaPlugin.git
 </code></pre>
-      </section>
-    </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Simplemafcordovaplugin maintained by <a href="https://github.com/paulcoiffier">paulcoiffier</a></p>
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+<p>Edit <code>maf-plugins.xml</code> and add the following code</p>
+
+<div class="highlight highlight-java"><pre><span class="pl-k">&lt;</span>cordova<span class="pl-k">-</span>plugin id<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>c2<span class="pl-pds">"</span></span> pluginId<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>com.sample.hello<span class="pl-pds">"</span></span> path<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>../../src/SimpleMafCordovaPlugin/<span class="pl-pds">"</span></span><span class="pl-k">&gt;</span>
+     <span class="pl-k">&lt;</span>platform id<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>p1<span class="pl-pds">"</span></span> name<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>android<span class="pl-pds">"</span></span> enabled<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>true<span class="pl-pds">"</span></span><span class="pl-k">/</span><span class="pl-k">&gt;</span>
+    <span class="pl-k">&lt;</span>platform id<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>p2<span class="pl-pds">"</span></span> name<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>ios<span class="pl-pds">"</span></span> enabled<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>true<span class="pl-pds">"</span></span><span class="pl-k">/</span><span class="pl-k">&gt;</span>
+<span class="pl-k">&lt;</span><span class="pl-k">/</span>cordova<span class="pl-k">-</span>plugin<span class="pl-k">&gt;</span></pre></div>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>For example, you can add this code on an amx page to run the plugin.</p>
+
+<div class="highlight highlight-js"><pre><span class="pl-k">&lt;</span>amx<span class="pl-k">:</span>verbatim id<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>v1<span class="pl-pds">"</span></span><span class="pl-k">&gt;</span>
+      <span class="pl-k">&lt;!</span>[<span class="pl-c1">CDATA</span>[
+        <span class="pl-k">&lt;</span>script type<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span><span class="pl-k">&gt;</span>
+
+        <span class="pl-k">var</span> <span class="pl-en">success</span> <span class="pl-k">=</span> <span class="pl-k">function</span>(<span class="pl-smi">message</span>) {
+            <span class="pl-c1">alert</span>(message);
+        }
+
+        <span class="pl-k">var</span> <span class="pl-en">failure</span> <span class="pl-k">=</span> <span class="pl-k">function</span>() {
+            <span class="pl-c1">alert</span>(<span class="pl-s"><span class="pl-pds">"</span>Error calling Hello Plugin<span class="pl-pds">"</span></span>);
+        }
+
+        hello.myAction(<span class="pl-s"><span class="pl-pds">"</span>World<span class="pl-pds">"</span></span>, success, failure);
+
+        <span class="pl-k">&lt;</span>/script<span class="pl-k">&gt;</span>
+      ]]<span class="pl-k">&gt;</span>
+    <span class="pl-k">&lt;</span>/amx<span class="pl-k">:</span>verbatim<span class="pl-k">&gt;</span></pre></div>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/paulcoiffier">paulcoiffier</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
-
+    <script src="javascripts/scale.fix.js"></script>
     
-
   </body>
 </html>
