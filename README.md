@@ -4,7 +4,7 @@ Simple plugin that returns your string prefixed with hello. This plugin is espec
 
 Greeting a user with "Hello, world" is something that could be done in JavaScript. This plugin provides a simple example demonstrating how Cordova plugins work.
 
-## Using
+## Installation
 
 Clone the plugin
 
@@ -18,6 +18,7 @@ Edit `maf-plugins.xml` and add the following code
     <platform id="p2" name="ios" enabled="true"/>
 </cordova-plugin>
 ```   
+## Usage
 
 For example, you can add this code on an amx page to run the plugin.
 ```js
@@ -39,4 +40,3 @@ For example, you can add this code on an amx page to run the plugin.
       ]]>
     </amx:verbatim>
 ```
-test
