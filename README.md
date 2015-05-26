@@ -8,4 +8,4 @@ Greeting a user with "Hello, world" is something that could be done in JavaScrip
 
 Clone the plugin
 
- $ git clone https://github.com/paulcoiffier/SimpleMafCordovaPlugin.git
+    $ git clone https://github.com/paulcoiffier/SimpleMafCordovaPlugin.git
