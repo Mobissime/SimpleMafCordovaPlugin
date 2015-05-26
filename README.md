@@ -6,14 +6,14 @@ Greeting a user with "Hello, world" is something that could be done in JavaScrip
 
 ## Installation
 
-Clone the plugin
+Clone the plugin in your "src" root app folder
 
     $ git clone https://github.com/paulcoiffier/SimpleMafCordovaPlugin.git
 
 Edit `maf-plugins.xml` and add the following code
 
 ```java
-<cordova-plugin id="c2" pluginId="com.talium.hello" path="../../src/TaliumCordovaPlugin/">
+<cordova-plugin id="c2" pluginId="com.sample.hello" path="../../src/SimpleMafCordovaPlugin/">
      <platform id="p1" name="android" enabled="true"/>
     <platform id="p2" name="ios" enabled="true"/>
 </cordova-plugin>
