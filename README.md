@@ -4,6 +4,10 @@ Simple plugin that returns your string prefixed with hello. This plugin is espec
 
 Greeting a user with "Hello, world" is something that could be done in JavaScript. This plugin provides a simple example demonstrating how Cordova plugins work.
 
+## Supported platforms
+- Android
+- IOS
+
 ## Installation
 
 Clone the plugin in your "src" root app folder
